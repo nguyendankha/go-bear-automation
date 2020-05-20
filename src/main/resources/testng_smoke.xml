@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="FREE CRM Application Test Automation Smoke Suite">
+	
+	<listeners>
+		<listener class-name="com.newtours.retryFailed.MyTransformer"/>
+	</listeners>
+	
+	<test name="Free CRM Application Chrome Test Cases">
+	
+	<parameter name="Browser" value="chrome"/>
+	
+		<classes>
+			<class name="com.newtours.testCases.LoginPageTest"></class>
+		</classes>
+		
+	</test>
+</suite>
